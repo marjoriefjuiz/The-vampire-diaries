@@ -1,6 +1,7 @@
 body {
   background-image: url('vampiro.jpeg');
   background-size: cover;
+  background-position: center;
   color: #fff;
   font-family: 'Georgia', serif;
   margin: 0;
