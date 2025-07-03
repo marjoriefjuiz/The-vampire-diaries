@@ -1,28 +1,85 @@
-body {
-  background-image: url('vampiro.jpeg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  font-family: 'Georgia', serif;
+* {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
 
-.conteudo {
-  background: rgba(0, 0, 0, 0.75);
-  padding: 30px;
-  margin: 50px auto;
-  max-width: 800px;
-  border-radius: 12px;
+body {
+  font-family: 'Georgia', serif;
+  color: #f4f4f4;
+  line-height: 1.7;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
 }
 
-.botao {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: crimson;
-  color: white;
+
+body.pagina1 {
+  background-image: url('vampire.jpeg');
+}
+
+body.pagina2 {
+  background-image: url('tvdfundo2.jpg');
+}
+
+body.pagina3 {
+  background-image: url('tvdfundo3.jpg');
+}
+
+/* MENU HORIZONTAL */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #8a0032;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  margin-top: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #8a0032;
+  border-bottom: 2px solid #8a0032;
+}
+
+/* CONTEÚDO */
+main {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Times New Roman', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #c72c48;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
